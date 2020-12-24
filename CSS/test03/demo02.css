@@ -1,0 +1,7 @@
+body article div {
+  width: 200px;
+  height: 200px;
+  font-size: 14px;
+  color: greenyellow;
+  background: linear-gradient(to right, red, blue);
+}

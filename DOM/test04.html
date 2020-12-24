@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100%;
+            height: 1000px;
+            display:flex;
+            flex-direction:column;
+            justify-content:left;
+            align-items :center;
+        }
+        div li{
+            width: 100px;
+            height: 135px;
+            background-image:url('../image/photo_8.jpg');
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+
+    </div>
+    <script>
+        var lis=document.querySelectorAll('li');
+        for(var i=0;i<lis.length;i++)
+        {
+            lis[i].style.backgroundPosition='0 -'+(i*135)+'px';
+        }
+    </script>
+</body>
+</html>

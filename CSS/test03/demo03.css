@@ -1,0 +1,43 @@
+body {
+  background-color: #ccc;
+  border: solid 2px blue;
+  background-clip: content-box;
+  empty-cells: display;
+}
+body table {
+  border-collapse: collapse;
+}
+body table thead {
+  border: solid 2px #aaa;
+}
+body table thead tr {
+  padding: 2px;
+}
+body table thead tr td {
+  text-align: center;
+  border: solid 2px #fff;
+}
+body table tbody {
+  padding: 2px;
+  border: solid 2px red;
+}
+body table tbody tr {
+  padding: 2px;
+}
+body table tbody tr td {
+  text-align: center;
+  border: solid 2px #fff;
+}
+body ul {
+  list-style-image: url("../../image/photo_4.gif");
+}
+body ul li {
+  width: 40px;
+  height: 20px;
+  background: red;
+}
+body ul::after {
+  display: inline-block;
+  content: "1";
+  background: #eee;
+}

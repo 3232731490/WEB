@@ -1,0 +1,24 @@
+body nav{
+    padding:20px;
+    display:grid;
+    grid-template-columns: 60px 1fr 100px;
+    justify-content: center;
+    align-items: center;
+    column-gap:60px;
+}
+.logo{
+    color:red;
+    font-size:1.5em;
+}
+.navbar a{
+    margin-right:40px;
+}
+.login{
+    width: 40px;
+    height: 25px;
+}
+.legiste{
+    background:sienna;
+    width: 40px;
+    height: 25px;
+}

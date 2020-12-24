@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>属性选择器</title>
+
+    <style>
+        [class="nilu"]{
+            font-size: 32px;
+        }
+        [class^="nilu"]{
+            color:skyblue;
+        }
+        [class$="nilu"]
+        {
+            color:tomato;
+        }
+        [class~="lihui"]
+        {
+            font-size: 24px;
+        }
+        [class|="lihui"]
+        {
+            font-size: 48px;
+        }
+        </style>
+</head>
+<body>
+    <p class="nilu">倪路</p>
+    <p class="lihui">lihiu</p>
+    <p class="nilu-lihui">倪路lihui</p>
+    <p class="lihui-nilu">lihui倪路</p>
+</body>
+</html>

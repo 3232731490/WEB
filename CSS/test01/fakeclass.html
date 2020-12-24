@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器测试</title>
+
+    <style>
+        
+        a:link{
+            color:limegreen;
+        }
+        a:visited{
+            color:magenta;
+        }
+        a:hover{
+            color:mediumslateblue;
+        }
+        a:active{
+            color:navajowhite;
+        }
+        input:focus{
+            background-color: orchid;
+        }
+        :enabled{
+            background-color:palegreen;
+        }
+        :disabled{
+            background-color: #dddddd;
+        }
+        input:checked+span{
+            font-size: 32px;
+        }
+        :required{
+            background-color:palegreen;
+        }
+        :optional{
+            background-color: plum;
+        }
+        input:invalid{
+            background-color: red;
+        }
+        input:valid{
+            background-color: green;
+        }
+        input:read-only{
+            background-color: gray;
+        }
+        input:read-write{
+          
+            background-color: hotpink;
+        }
+        :root{
+            background-color: lightblue;
+        }
+        p:first-child{
+            color:brown;
+        }
+        p:last-child{
+            color:lightskyblue;
+        }
+        p:last-of-type{
+            color:orangered;
+        }
+        span:only-child{
+            color: rgb(92, 49, 7);
+        }
+        p:nth-child(3){
+            color:powderblue;
+        }
+        p:nth-last-child(3){
+            color:rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+   <p>lorem1</p>
+   <p>lorem2</p>
+   <p>lorem3</p>
+   <p>lorem4</p>
+   <p>lorem5</p>
+   <a href="https://www.baidu.com" target="_blank"><span>百度</span></a><br><br>
+   <input type="email" placeholder="请输入您的邮箱">
+    <br><br>
+<form >
+    <ui>
+        <li><p>电话：</p><input type="tel" placeholder="请输入您的常用电话" required> </li>
+        <li><p>邮箱：</p><input type="email" placeholder="请输入您的常用邮箱" > </li>
+        <li><p>地址(禁用)：</p><input type="text" placeholder="请输入您的地址" disabled> </li>
+        <li><p>账号：</p><input type="text" placeholder="请输入您的账号" required> </li>
+        <li><p>密码：</p><input type="password" placeholder="请输入您的密码" required> </li>
+    </ui>
+    <br>
+    <P><input type="radio" name="sex" value="male" ><span>男<span></P>
+    <P><input type="radio" name="sex" value="female"><span>女</span></P>
+
+    <br><br>
+    <p>请输入0~10以内数字</p>
+    <input type="number" max=10 min=0 value=5>
+    <br><br>
+    <input type="text" value="readonly" readonly>
+    <input type="text" value="read-write" >
+</form>
+</body>
+</html>

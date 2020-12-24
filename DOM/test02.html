@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display:flex;
+            flex-direction: row;
+            justify-content:center;
+            align-items:center;
+        }
+        .test{
+
+            display: flex;
+            flex-direction: row;
+            justify-content:flex-start;
+        }
+        .test img{
+            
+            width:200px;
+            height:100%;
+        }
+        .test .close-btn{
+            margin-right:20px;
+            color:red;
+            font-size:2em;
+        }
+    </style>
+</head>
+<body>
+    <div class='test'>
+        <i class="close-btn">x</i>
+        <img src="../image/photo_1.jpg" alt="">
+        
+    </div>
+    <script>
+        var div=document.querySelector('.test');
+        var btn=document.querySelector('.close-btn');
+        btn.onclick=function(){
+            div.style.display='none';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> 测试表格</title>
+		<meta name="author" content="倪路">
+		<meta name="description" content="测试表格">
+		<style>
+			table{
+				border:1px solid black;
+				border-collapse:collapse;
+
+			}
+			th{
+				border:1px solid black;
+					padding:6px;
+			}
+			td{
+				border:1px solid black;
+					padding:6px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<table>
+		<caption>成员表</caption>
+		
+		<colgroup>
+			<col style="background:red">
+				
+			<col span="4" style="background:green">
+		</colgroup>
+			
+			<thead>
+				<tr>
+					<th>姓名</th>
+					<th>年龄</th>
+					<th>成绩</th>
+					<th>图片</th>
+					<th>空列</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>倪路</td>
+					<td>18</td>
+					<td>99</td>
+					<td><img src="../../image/photo_5.jpg"></td>
+					
+					<td rowspan="5"></td>
+					
+				<tr>
+				<tr>
+					<td>李慧</td>
+					<td>19</td>
+					<td>98</td>
+					<td><img src="../../image/photo_6.jpg"></td>
+				<tr>
+				<tr>
+					<td>杨宝胜</td>
+					<td>20</td>
+					<td>97</td>
+					<td><img src="../../image/photo_3.jpg"></td>
+				<tr>
+			</tbody>
+			
+			<tfoot >
+				<tr><td colspan="5">以上人员为我单方面添加，未经本人同意</td></tr>
+			</tfoot>
+			
+		</table>
+		
+	</body>
+
+</html>

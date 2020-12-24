@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo11</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            background-color:#aaa;
+        }
+        body main{
+            border:solid 2px lightcoral;
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            width: 200px;
+            height: 50px;
+        }
+        body main a{
+            flex:1;
+            font-size:24px;
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            overflow:hidden;
+            text-decoration:none;
+            position:relative;
+        }
+        body main a::after{
+            content:"";
+            width:0;
+            height: 100%;
+            background:lightgreen;
+            transform:skew(45deg);
+            position:absolute;
+            transition:.5s;
+            z-index:-1;
+        }
+        body main a:hover::after{
+            width: 200%;
+        }
+    </style>
+
+</head>
+<body>
+    <main>
+        <a href="" class="btn"> NILU</a>
+    </main>
+</body>
+</html>

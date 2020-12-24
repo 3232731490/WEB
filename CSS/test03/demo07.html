@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo07</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color:#ccc;
+        }
+        main{
+            border:solid 2px sliver;
+            width: 400px;
+            height: 400px;
+            background-color:#aaa;
+            overflow:hidden;
+        }
+        main div{
+            width:400px;
+            height:400px;
+            transition:2s;
+           
+        }
+        main div:first-of-type{
+            background:red;
+            z-index:2;
+         float:left;
+        }
+        main div:last-of-type{
+            z-index:1;
+            
+            background-color:blue;
+        }
+        main div:first-of-type:hover{
+            transform:translate3d(100%,100%,50px);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div>1</div>
+        <div>2</div>
+    </main>
+</body>
+</html>

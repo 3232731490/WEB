@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>input</title>
+		<meta name="author" content="倪路">
+		<meta name="description" content="input相关">
+		<meta name="viewport" content="width=divice-width, initial-scale=1.0">
+		
+	</head>
+	
+	<body>
+		<form method="post" target="_blank" enctype="multipart/form-data">
+		
+			<!--通过input实现按钮-->
+			<input type="button" value="btn_1">
+			<input type="submit" value="btn_2">
+			<input type="reset" value="btn_3">
+			<br><br>
+			
+			<!--通过input实现单选框-->
+			<label><input type="radio" name="sex" value="male"> 男 </label>
+			<label><input type="radio" name="sex" value="female"> 女 </label>
+			<br><br>
+			
+			<!--通过Input实现复选框-->
+			<label> <input type="checkbox" name="student" value="nilu"> 倪路</label>
+			<label> <input type="checkbox" name="student" value="lihui"> 李慧</label>
+			<label> <input type="checkbox" name="student" value="wen"> 温</label>
+			<label> <input type="checkbox" name="student" value="jun"> 君</label>
+			<br><br>
+			
+			<!--通过input输入时间和日期-->
+			<label> 请输入时间<input type="time" name="time" > </label>
+			<label> 请输入日期<input type="date" name="date" > </label>
+			<label> 请输入周<input type="week" name="week" > </label>
+			<label> 请输入月<input type="month" name="month" > </label>
+			<label> 请输入本地时间<input type="datetime-local" name="datetime-local" > </label>
+			<br><br>
+			
+			<!--通过input实现搜索框-->
+			<label>请输入您要搜索的东西：<input type="search" name="search"></label>
+			<br><br>
+			
+			<!--通过input实现颜色选择框-->
+			<label>请选择您要喜欢的颜色：<input type="color" name="color"></label>
+			<br><br>
+			
+			<!--通过input实现自定义图像按钮-->
+			<label>我其实是一个按钮：<input type="image" src="../image/photo_4.gif" alt="myImgButton"></label>
+			<br><br>
+			
+			<!--将input隐藏-->
+			<label>这里有一个隐藏起来的input：<input type="hidden" name="hiddeninput" disabled value="隐藏框"></label>
+			<br><br>
+			
+			<!--通过input上传文件-->
+			<!--要将form中enctype属性从默认的"application/x-www-form-urlencoded"->"multipart/form-data"-->
+			<!--accept->指定文件类型 (.jpg,.png) (image/*) (video/*)-->
+			<!--限制文件大小 MAX_FILE_SIZE-->
+			<!--multiple->同时上传多个文件-->
+			<input type="hidden" name="MAX_FILE_SIZE" value="1024">  <!--限制文件大小 1024字节-->
+			<label>请选择您要上传的文件：<input type="file" name="file" accept=".jpg" multiple></label>
+			<br><br>
+			
+			<!--限定数字输入-->
+			<!--min,max,step-> 限定输入范围  value->设置默认值-->
+			<label>请输入年龄（直接输入）：<input type="number" name="age" value="8" min="1" max="100" step="1"></label>
+			<br><br>
+			
+			<!--数字滚动条-->
+			<!--min,max,step-> 限定输入范围  value->设置默认值-->
+			<label>请输入年龄（滚动条）：<input type="range" name="range" value="8" min="1" max="100" step="1"></label>
+			<br><br>
+			
+			<!--电话，邮箱，网址-->
+			<!--可使用pattern对用户输入内容进行正则判断-->
+			<!--可使用placeholder对用户输入内容进行提示-->
+			<!--可使用size设置输入框长度-->
+			<!--可使用maxlength设置用户最大输入字符串长度-->
+			<!--使用list属性，datalist元素对输入框提供选择输入功能 (datalist可在表单外设置)-->
+			<label>请输入邮箱：<input type="email" name="email" pattern="\d{6,11}@qq\.com" placeholder="请输入您的qq邮箱"></label>
+			<label>请输入电话：<input type="tel" name="tel" pattern="\d{11}" placeholder="请输入您的电话（11位数）"></label>
+			<label>请输入网址：<input type="url" name="url" pattern="[https:]\/{2}\w+\.[com]" placeholder="请输入https：... .com网站" size="25" maxlength="25" list="myurl"></label>
+			<br><br>
+			
+		</form>
+		<datalist id="myurl">
+			<option value="https://www.baidu.com">百度</option>
+			<option value="https://www.taobao.com">淘宝</option>
+		</datalist>
+
+		
+	</body>
+	
+</html>

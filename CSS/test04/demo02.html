@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo02</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing:border-box;   
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background:#222;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        main{
+            width: 800px;
+            height: 200px;
+           
+            background:#ccc;
+            display:flex;
+            position:relative;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            background:silver;
+        }
+      main::before{
+          content:"倪路";
+          width: 200px;
+          height: 100px;
+          position:absolute;
+          left:0;
+          top:0;
+        background:red;
+        font-size:3em;
+        color:white;
+        transition-duration:3s;
+        transition-timing-function: steps(3,start);
+      }
+      main::after{
+          content:"张登奎";
+          width: 200px;
+          height: 100px;
+          position:absolute;
+          left:0;
+          bottom:0;
+        background:blue;
+        color:white;
+        font-size:3em;
+        transition-duration:3s;
+        transition-timing-function: steps(3,end);
+      }
+main:hover::before{
+    transform:translateX(600px);
+}
+main:hover::after{
+    transform:translateX(600px);
+}
+    </style>
+</head>
+<body>
+    <main>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </main>
+</body>
+</html>

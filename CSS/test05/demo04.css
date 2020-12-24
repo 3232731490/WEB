@@ -1,0 +1,4 @@
+@import url(common.css) screen;
+@import url(bigscreen.css) only screen and (min-width: 1000px);
+@import url(smallscreen.css) only screen and (max-width: 540px);
+@import url(zhongscreen.css) only screen and (min-width: 540px) and (max-width: 1000px);

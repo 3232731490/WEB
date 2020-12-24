@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo01</title>
+
+    <style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+main::before{
+    content:"倪路出品";
+    color:white;
+    font-size:2em;
+    opacity:0;
+    animation-name:myopacity;
+    animation-duration:2s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+body{
+    background:#888;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    background:#555;
+    animation-name:myscale,mybackground,radius,myrotate;
+    animation-duration:4s;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+   animation-fill-mode: forwards;
+    z-index:2;
+ 
+}
+@keyframes myscale{
+    25%{
+        transform: scale(.5);
+    }
+    50%{
+        transform:scale(1);
+    }
+    75%{
+        transform:scale(.5);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+@keyframes radius{
+    25%{
+        border-radius: 50%;
+    }
+    50%{
+        border-radius:0;
+    }
+    75%{
+        border-radius: 50%;
+    }
+    100%{
+        border-radius: 0%;
+    }
+}
+@keyframes mybackground{
+    25%{
+       background:blanchedalmond;
+    }
+    50%{
+        background:burlywood;
+    }
+    75%{
+        background:yellow;
+    }
+    100%{ 
+        background:rgb(192, 196, 187);
+    }
+}
+@keyframes myrotate {
+    50%{
+        transform:rotate(360deg)
+    }
+ 
+    75%{
+        transform:rotate(0deg)
+    }
+  
+}
+@keyframes myopacity{
+    to{
+        opacity:.8;
+    }
+}
+    </style>
+</head>
+<body>
+    <main>
+      
+    </main>
+</body>
+</html>

@@ -1,0 +1,48 @@
+body{
+    background-color:#ccc;
+    border:solid 2px blue;
+    background-clip:content-box;
+    empty-cells:display;
+    table{
+        border-collapse: collapse;
+        thead{
+            border:solid 2px #aaa;
+            tr{
+                padding:2px;
+                td{
+                    text-align:center;
+                    border:solid 2px #fff;
+                }
+                
+            }
+
+        }
+        tbody{
+            padding:2px;
+            border:solid 2px red;
+            tr{
+                padding:2px;
+                td{
+                    text-align:center;
+                    border:solid 2px #fff;
+                }
+               
+            }
+        }
+    }
+
+    ul{
+       
+        list-style-image:url("../../image/photo_4.gif");
+        li{
+            width:40px;
+            height:20px;
+            background:red;
+        }
+    }
+    ul::after{
+        display:inline-block;
+        content:"1";
+        background: #eee;
+    }
+}

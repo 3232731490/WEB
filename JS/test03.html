@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      var number=[];
+      var i=0;
+      var num=prompt('请问您要输入几个数字进行排序？');
+
+      for(i;i<num;)
+      {
+          var temp=prompt('请输入第'+ (i+1) +'个数字：');
+          number[i++]=parseInt(temp);
+      }
+      for(var j=0;j<num-1;j++)
+      {
+          for(var k=j+1;k<num;k++)
+          {
+                if(number[j]>number[k])
+                {
+                    var temp=number[k];
+                    number[k]=number[j];
+                    number[j]=temp;
+                }
+          }
+      }
+      console.log('排序后的结果为：');
+      for(var s=0;s<num;s++)
+      {
+          console.log(number[s]);
+      }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

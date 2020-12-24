@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo14</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing:border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color:#aaa;
+            display:flex;
+            justify-content: center;
+            align-items:center;
+
+        }
+        main{
+            border:solid 2px silver;
+            width: 200px;
+            height: 200px;
+            position:relative;
+           transform-style:preserve-3d;
+           transform:perspective(900px) rotateX(-45deg);
+           transform-origin:center center -200px;
+           transition:1s;
+        }
+        main div{
+            width: 200px;
+            height: 200px;
+            border:solid 2px #ccc;
+            position:absolute;
+            left:50%;
+            top:50%;
+            transform:translate(-50%,-50%);
+            overflow:hidden;
+            transition:2s;
+        }
+        main div img{
+            height:100%;
+        }
+         main div:nth-of-type(1){
+            transform-origin:center center -200px;
+            transform:rotateY(90deg);
+        }
+        main div:nth-of-type(2){
+            transform-origin:center center -200px;
+            transform:rotateY(180deg);
+        }
+        main div:nth-of-type(3){
+            transform-origin:center center -200px;
+            transform:rotateY(270deg);
+        }
+        main div:nth-of-type(4){
+            transform-origin:center center -200px;
+            transform:rotateY(360deg);
+        }
+        main:hover{
+            transform:rotateY(180deg);
+        } 
+    </style>
+</head>
+<body>
+    <main>
+        <div>1<img src="../../image/photo_5.jpg" alt=""></div>
+        <div>2<img src="../../image/photo_6.jpg" alt=""></div>
+        <div>3<img src="../../image/photo_7.jpg" alt=""></div>
+        <div>4<img src="../../image/photo_1.jpg" alt=""></div>
+
+    </main>
+</body>
+</html>

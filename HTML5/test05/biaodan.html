@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>表单</title>
+		<meta name="author" content="倪路">
+		<meta name="description" content="表单相关">
+		<meta name="viewport" content="width=divice-width, initial-scale=1.0">
+		
+	</head>
+	
+	<body>
+		<form method="post" target="_blank">
+					<!--通过labe中for属性关联另一元素的id-->
+					<!--autocomplete设置自动填充-->
+					<!--value设置input默认值-->
+					<!--autofocus设置自动聚焦-->
+					<!--readonly设置禁止修改-->
+					<!--fieldset对表单内容分组-->
+					<!--legend对表单分组进行说明-->
+					<!--select下拉选择框，配合option一起使用-->
+					<!--optgroup对option进行分组-->
+			<fieldset>
+			<legend>输入区</legend>
+				<label for="admin" >请输入账号：</label><input type="text" name="admin" id="admin" autocomplete="off" value="3232731490" autofocus readonly><br><br>
+				
+				<label for="key">请输入密码：</label><input type="password" name="password" id="key"><br><br>
+				
+				<label >你是男的还是女的？：</label>
+				<select name="sex">
+					<option value="male">男</option>
+					<option value="female">女</option>
+				</select><br><br>
+				
+				<label>选择一个数字</label>
+					<!--multiple 实现复选框，去掉则是单选框-->
+				<select name="int" multiple>
+				<optgroup label="1~3">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+				<optgroup>
+				<optgroup label="4~6">
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+				<optgroup>
+				<optgroup label="7~9">
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+				<optgroup>
+				</select>
+			</fieldset>
+			
+			<fieldset>
+			<legend>提交区</legend>
+			<button type="submit" > 提交</button>
+			<!--disabled设置禁用-->
+			<button type="submit" disabled > 禁用</button>
+			</fieldset>
+			
+			<!--output 输入计算结果 要用到js知识 这里只给定义-->
+			
+			<!--textarea 接收多行文本输入-->
+			<!--指定输入框的行数和列数 rows="30" cols="20"-->
+			<textarea name="nilu" wrap="off">
+				
+				
+				
+			</textarea>
+			
+		</form>
+	</body>
+	
+
+</html>

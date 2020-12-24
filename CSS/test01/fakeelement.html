@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪元素选择器</title>
+
+    <style>
+        ::first-line{
+            color:lightpink;
+            font-size: 24px;
+        }
+        ::first-letter{
+            color:red;
+            font-size: 24px;
+        }
+        a::before{
+            content:"欢迎访问";
+        }
+        a::after{
+            content:"网站";
+        }
+        ::selection{
+            color:limegreen;
+        }
+    </style>
+</head>
+<body>
+    <p>lalalala样式测试</p>
+    <p>lihui<br><br>我还是放不下 </p>
+    <p>nilu</p>
+    <a href="https://ww.baidu.com"> 百度</a>
+</body>
+</html>

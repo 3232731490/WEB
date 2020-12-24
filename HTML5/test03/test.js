@@ -1,0 +1,1 @@
+	document.write("随便加了点内容")

@@ -1,0 +1,32 @@
+body nav{
+    padding:20px;
+    display:grid;
+    grid-template-columns: 60px 1fr 100px;
+    justify-content: center;
+    align-items: center;
+    column-gap:60px;
+}
+.logo{
+    color:blue;
+    font: size 1em;
+}
+.navbar {
+   visibility: hidden;
+}
+.login{
+    width: 40px;
+    height: 25px;
+    display:none;
+}
+.legiste{
+    background:sienna;
+    width: 40px;
+    height: 25px;
+    display:none;
+}
+.mybutton::before{
+    content:"展开";
+    width: 120px;
+    height: 50px;
+    background:rgb(216, 216, 204);
+}

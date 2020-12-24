@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo09</title>
+
+    <style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color:#ccc;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+body main{
+    display:flex;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+body main div{
+    border:solid 2px silver;
+    margin-right:20px;
+    width: 200px;
+    height: 200px;
+    overflow:hidden;
+    display:flex;
+    justify-content: space-around;
+    transition:2s;
+}
+body main div img{
+    height: 100%;
+    transition:2s;
+    filter:blur(10px);
+}
+/* body main:hover div{
+    transform:scale(.5);
+    filter:blur(10px);
+}
+body main:hover div:hover{
+    transform:scale(1.5);
+    filter:blur(0);
+} */
+body main div:hover img{
+    transform:scale(1.3);
+    filter:blur(0);
+}
+
+    </style>
+</head>
+<body>
+    <main>
+       <div><img src="../../image/photo_5.jpg" alt=""></div>
+       <div><img src="../../image/photo_6.jpg" alt=""></div>
+       <div><img src="../../image/photo_7.jpg" alt=""></div>
+      
+    </main>
+</body>
+</html>

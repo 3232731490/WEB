@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo01</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing:border-box;   
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background:#222;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        main{
+            width: 200px;
+            height: 200px;
+            position:relative;
+            /* background:#ccc; */
+
+        }
+        div{
+            position:absolute;
+            width: 200px;
+            height: 200px;
+            background:silver;
+            top:0;
+            left:0;
+            transition-duration: 1s;
+            transition-timing-function:ease-in-out;
+        }
+        main:hover div{
+            transform:scale(3);
+            opacity:0;
+            background:red;
+        }
+        main:hover div:last-child{
+            transform:scale(1);
+            opacity:1;
+            background:red;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div></div>
+        <div></div>
+    </main>
+</body>
+</html>

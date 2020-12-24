@@ -1,0 +1,32 @@
+body{
+    article{
+        overflow:hidden;
+        display:flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        justify-content: space-around;
+        div{
+            background-color: greenyellow;
+            width:400px;
+            height:300px;
+            float:left;
+            margin:30px;
+            font-size:24px;
+            text-align:center;
+            display:flex;
+            flex-direction: column;
+            flex-wrap:wrap;
+            justify-content: center;
+            
+        }
+        div:nth-of-type(1){
+            flex:0 1 400px;
+        }
+        div:nth-of-type(2){
+            flex:1 1 400px;
+        }
+        div:nth-of-type(3){
+            flex:1 0 400px;
+        }
+    }
+}
